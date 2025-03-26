@@ -59,7 +59,7 @@ nav {
     align-items: center;
     padding: 0 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1538108149393-fbbd81895907') center/cover;
+                url('https://plus.unsplash.com/premium_photo-1723874529023-f867c1dcb077?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvdXAlMjBvZiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D') center/cover;
 }
 
 .hero-content {
@@ -109,8 +109,7 @@ h1 {
 
 .services {
     padding: 100px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url('https://images.unsplash.com/photo-1504813184591-01572f98c85f') center/cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
 
 .services-container {
@@ -233,11 +232,30 @@ h1 {
 }
 
 .doctor-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 auto 20px;
-    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 5px 15px rgba(0, 180, 216, 0.3);
+}
+
+.doctor-card {
+    background: rgba(45, 45, 45, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -602,6 +620,23 @@ footer {
 
 .about-features i {
     color: var(--accent-color);
+}
+
+.about-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
 }
 
 .about-image {
